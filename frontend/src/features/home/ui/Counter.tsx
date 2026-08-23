@@ -12,11 +12,11 @@ export default function Counter() {
     <div>
       <h2>Count: {count}</h2>
 
-      <button className="border bg-amber-100" onClick={() => dispatch(increment())}>+</button>
-
-      <button className="border bg-amber-100" onClick={() => dispatch(decrement())}>-</button>
-
-      <button className="border bg-amber-100" onClick={() => dispatch(incrementByAmount(5))}>+5</button>
+      <button className="border bg-amber-100" onClick={() => dispatch(increment())}>increase+</button>
+      <br />
+      <button className="border bg-amber-100" onClick={() => dispatch(decrement())}>decrease-</button>
+      <br />
+      <button className="border bg-amber-100" onClick={() => dispatch(incrementByAmount(5))}>increase by +5</button>
     </div>
   );
 }
