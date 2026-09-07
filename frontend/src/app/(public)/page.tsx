@@ -1,12 +1,9 @@
-import Counter from "@/features/home/ui/Counter";
+import Home from "@/features/home/ui/Home";
 
 export default function HomePage() {
-    return (
-        <section>
-            <h1>Welcome to Verandah</h1>
-            <p>Brew House Kitchen</p>
-
-            <Counter />
-        </section>
-    );
+  return (
+    <section>
+      <Home />
+    </section>
+  );
 }

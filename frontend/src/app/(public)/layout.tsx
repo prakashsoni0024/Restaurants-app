@@ -5,9 +5,7 @@ export default function PublicLayout({children,}: Readonly<{children: React.Reac
     return (
         <>
             <Navbar />
-
             <main>{children}</main>
-
             <Footer />
         </>
     );
