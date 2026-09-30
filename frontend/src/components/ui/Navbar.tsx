@@ -4,8 +4,9 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { ArchMark } from "@/utils/logo";
 
-const smoothEase = [0.22, 1, 0.36, 1];
+const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 const desktopLinks = [
   { href: "/about", label: "About" },
@@ -63,26 +64,23 @@ export default function Navbar() {
         duration: 0.7,
         ease: smoothEase,
       }}
-      className="fixed left-0 right-0 top-0 z-50"
+      className="absolute left-0 right-0 top-0 z-50"
     >
       <nav className="border-b border-[#d8c1c3]/40 bg-[#fff9ef]/90 backdrop-blur-md">
         <div className="mx-auto flex h-[88px] max-w-[1280px] items-center justify-between px-5 md:px-16">
-
           {/* Logo */}
           <Link
             href="/"
-            className="font-serif text-3xl font-semibold tracking-tight text-[#3f0917]"
+            className="flex items-center gap-1 font-serif text-3xl font-semibold tracking-tight text-[#3f0917]"
           >
-            Verandah
+            <ArchMark className="h-10 w-8 shrink-0" />
+            <span>Verandah</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-9 md:flex">
             {desktopLinks.map((link) => (
-              <NavLink
-                key={link.href}
-                href={link.href}
-              >
+              <NavLink key={link.href} href={link.href}>
                 {link.label}
               </NavLink>
             ))}
@@ -166,10 +164,7 @@ export default function Navbar() {
                 ))}
 
                 {/* Mobile CTA */}
-                <motion.div
-                  variants={mobileLinksVariants}
-                  className="mt-2"
-                >
+                <motion.div variants={mobileLinksVariants} className="mt-2">
                   <Link
                     href="/menu"
                     onClick={closeMobileMenu}

@@ -4,7 +4,8 @@ import { useCallback, useEffect, useRef, useState, type ReactNode } from "react"
 import Link from "next/link";
 import { LayoutGroup, motion } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import useAnimation from "../hooks/useAnimation";
+import useAnimation from "../../../hooks/useAnimation";
+import { ArchMark } from "@/utils/logo";
 
 const { smoothEase, fadeUp, heroContainer, heroItem } = useAnimation();
 
@@ -720,22 +721,7 @@ function MenuSection({ section }: { section: Section }) {
   );
 }
 
-/** Small arched-window mark that echoes the printed menu. */
-function ArchMark() {
-  return (
-    <svg
-      viewBox="0 0 40 48"
-      className="mx-auto h-12 w-10 text-[#904c2e]"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      aria-hidden
-    >
-      <path d="M6 44V22C6 12 12 5 20 5s14 7 14 17v22z" />
-      <path d="M13 44V24c0-6 3-11 7-11s7 5 7 11v20" />
-    </svg>
-  );
-}
+
 
 function ArrowButton({
   label,

@@ -8,8 +8,7 @@ import {
 } from "react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { Check, Clock, Mail, MapPin, Phone } from "lucide-react";
-import useAnimation from "../hooks/useAnimation";
-
+import useAnimation from "../../../hooks/useAnimation";
 const { smoothEase, fadeUp, heroContainer, heroItem } = useAnimation();
 
 /* =========================================================

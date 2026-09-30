@@ -5,7 +5,7 @@ const useAnimation = () => {
        MOTION SETTINGS
     ========================================================= */
 
-    const smoothEase = [0.22, 1, 0.36, 1];
+    const smoothEase = [0.22, 1, 0.36, 1] as const;
 
     const fadeUp = {
         hidden: {

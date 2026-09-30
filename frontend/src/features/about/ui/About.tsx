@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import useAnimation from "../hooks/useAnimation";
+import useAnimation from "../../../hooks/useAnimation";
 
 const { smoothEase, fadeUp, heroContainer, heroItem, imageReveal } =
   useAnimation();

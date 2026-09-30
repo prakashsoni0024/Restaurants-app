@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArchMark } from "@/utils/logo";
 
-const smoothEase = [0.22, 1, 0.36, 1];
+const smoothEase = [0.22, 1, 0.36, 1] as const;
 
 const footerContainer = {
   hidden: {},
@@ -43,14 +44,15 @@ export default function Footer() {
         <motion.div variants={footerItem}>
           <Link
             href="/"
-            className="font-serif text-3xl font-semibold text-[#3f0917]"
+            className="flex items-center gap-1 font-serif text-3xl font-semibold tracking-tight text-[#3f0917]"
           >
-            Verandah
+            <ArchMark className="h-8 w-7 shrink-0" />
+            <span>Verandah</span>
           </Link>
 
           <p className="mt-5 max-w-xs text-sm leading-6 text-[#534344]">
-            Contemporary Indian dining built around flavour, comfort and
-            good company.
+            Contemporary Indian dining built around flavour, comfort and good
+            company.
           </p>
 
           <p className="mt-6 text-xs text-[#857374]">

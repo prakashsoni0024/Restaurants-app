@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
-import useAnimation from "../hooks/useAnimation";
+import useAnimation from "../../../hooks/useAnimation";
 
 const { smoothEase, fadeUp, heroContainer, heroItem } = useAnimation();
 
