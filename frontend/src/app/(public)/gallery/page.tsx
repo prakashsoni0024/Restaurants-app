@@ -1,7 +1,9 @@
+import Gallery from "@/features/gallery/ui/Gallery";
+
 export default function GalleryPage() {
   return (
     <section>
-      <h1>Tis is you Gallery page</h1>
+      <Gallery />
     </section>
   )
   

@@ -1,7 +1,9 @@
+import Menu from "@/features/menu/ui/Menu";
+
 export default function MenuPage() {
   return (
     <section>
-      <h1>Tis is you Menut page</h1>
+      <Menu />
     </section>
   )
   

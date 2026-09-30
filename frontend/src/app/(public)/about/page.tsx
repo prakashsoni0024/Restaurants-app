@@ -1,10 +1,11 @@
+import About from "@/features/about/ui/About";
 
 
 
 export default function AboutPage() {
     return (
     <section>
-      <h1>THis is you about page</h1>
+      <About />
     </section>
     )
 }
