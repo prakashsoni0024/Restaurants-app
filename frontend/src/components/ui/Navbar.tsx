@@ -93,12 +93,12 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="hidden md:block"
           >
-            <Link
-              href="/menu"
-              className="block bg-[#5a1f2b] px-6 py-3 text-sm font-medium tracking-[0.05em] text-white transition-colors duration-200 hover:bg-[#3f0917]"
+            <a
+              href="tel:+916267094879"
+              className="inline-block bg-[#5a1f2b] px-6 py-3 text-sm font-medium tracking-[0.05em] text-white transition-colors duration-200 hover:bg-[#3f0917]"
             >
-              VIEW MENU
-            </Link>
+              CALL US
+            </a>
           </motion.div>
 
           {/* Mobile Menu Button */}
@@ -164,13 +164,13 @@ export default function Navbar() {
                 ))}
 
                 {/* Mobile CTA */}
-                <motion.div variants={mobileLinksVariants} className="mt-2">
+                <motion.div variants={mobileLinksVariants} className="mt-2 gap-3 flex flex-col">
                   <Link
-                    href="/menu"
+                    href="tel:+916267094879"
                     onClick={closeMobileMenu}
                     className="block w-full bg-[#5a1f2b] px-6 py-4 text-center text-sm font-medium tracking-[0.05em] text-white transition-colors duration-200 hover:bg-[#3f0917]"
                   >
-                    VIEW MENU
+                    CALL US
                   </Link>
                 </motion.div>
               </motion.div>
